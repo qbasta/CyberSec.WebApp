@@ -1,0 +1,11 @@
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\bin\Debug\net8.0\CyberSec.dto.deps.json
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\bin\Debug\net8.0\CyberSec.dto.dll
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\bin\Debug\net8.0\CyberSec.dto.pdb
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.AssemblyInfoInputs.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.AssemblyInfo.cs
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.csproj.CoreCompileInputs.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.dll
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\refint\CyberSec.dto.dll
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.pdb
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\ref\CyberSec.dto.dll

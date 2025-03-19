@@ -1,0 +1,30 @@
+﻿@page "/login"
+@using CyberSec.dal.Models
+@rendermode InteractiveServer
+@inject CyberSec.bal.Services.Interfaces.IAuthService authService
+
+<PageTitle>Logowanie</PageTitle>
+
+<h3>Zaloguj się</h3>
+
+<EditForm Model="@loginModel" OnValidSubmit="LogIn">
+    <InputText placeholder="Login" @bind-Value="loginModel.Username" class="form-control my-2"/>
+    <InputText type="password" placeholder="Hasło" @bind-Value="loginModel.Password" class="form-control my-2"/>
+    <button type="submit" class="btn btn-primary">Zaloguj</button>
+</EditForm>
+
+@if (message != null)
+{
+    <div class="alert alert-info mt-2">@message</div>
+}
+
+@code {
+    private LoginModel loginModel = new();
+    private string? message;
+
+    private async Task LogIn()
+    {
+        bool success = await authService.ValidateUserAsync(loginModel.Username, loginModel.Password);
+        message = success ? "Zalogowano poprawnie!" : "Niepoprawny login lub hasło!";
+    }
+}

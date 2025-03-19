@@ -1,0 +1,17 @@
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\bin\Debug\net8.0\CyberSec.dal.deps.json
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\bin\Debug\net8.0\CyberSec.dal.runtimeconfig.json
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\bin\Debug\net8.0\CyberSec.dal.dll
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\bin\Debug\net8.0\CyberSec.dal.pdb
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\bin\Debug\net8.0\CyberSec.dto.dll
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\bin\Debug\net8.0\CyberSec.dto.pdb
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.csproj.AssemblyReference.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.AssemblyInfoInputs.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.AssemblyInfo.cs
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.csproj.CoreCompileInputs.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.076E81D8.Up2Date
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.dll
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\refint\CyberSec.dal.dll
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.pdb
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.genruntimeconfig.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\ref\CyberSec.dal.dll

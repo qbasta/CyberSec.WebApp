@@ -1,0 +1,22 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider authStateProvider
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, @username!</h1>
+
+@code {
+    private string? username = "Guest";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity is not null && user.Identity.IsAuthenticated)
+        {
+            username = user.Identity.Name;
+        }
+    }
+}
