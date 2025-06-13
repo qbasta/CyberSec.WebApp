@@ -2,11 +2,13 @@
 
 public class Message
 {
-    public int Id { get; set; }
-    public string Content { get; set; }
+    public string Id { get; set; } = string.Empty;
+    public string Content { get; set; } = string.Empty;
     
-    public int UserId { get; set; }
-    public User User { get; set; }
+    public string UserId { get; set; } = string.Empty;
+    public User User { get; set; } = null!;
 
+    public DateTime CreatedDateTime { get; set; }
+    
     public ICollection<Permission> Permissions { get; set; } = new List<Permission>();
 }

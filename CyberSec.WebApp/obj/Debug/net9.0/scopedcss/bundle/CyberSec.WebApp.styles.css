@@ -22,20 +22,20 @@ main[b-nhq86g19sr] {
     align-items: center;
 }
 
-    .top-row[b-nhq86g19sr]  a, .top-row[b-nhq86g19sr]  .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
+.top-row[b-nhq86g19sr]  a, .top-row[b-nhq86g19sr]  .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
 
-    .top-row[b-nhq86g19sr]  a:hover, .top-row[b-nhq86g19sr]  .btn-link:hover {
-        text-decoration: underline;
-    }
+.top-row[b-nhq86g19sr]  a:hover, .top-row[b-nhq86g19sr]  .btn-link:hover {
+    text-decoration: underline;
+}
 
-    .top-row[b-nhq86g19sr]  a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.top-row[b-nhq86g19sr]  a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 @media (max-width: 640.98px) {
     .top-row[b-nhq86g19sr] {
@@ -91,12 +91,12 @@ main[b-nhq86g19sr] {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss[b-nhq86g19sr] {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss[b-nhq86g19sr] {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
 /* _content/CyberSec.WebApp/Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-51ylkiyv53] {
     appearance: none;
@@ -151,25 +151,25 @@ main[b-nhq86g19sr] {
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-51ylkiyv53] {
-        padding-top: 1rem;
-    }
+.nav-item:first-of-type[b-51ylkiyv53] {
+    padding-top: 1rem;
+}
 
-    .nav-item:last-of-type[b-51ylkiyv53] {
-        padding-bottom: 1rem;
-    }
+.nav-item:last-of-type[b-51ylkiyv53] {
+    padding-bottom: 1rem;
+}
 
-    .nav-item[b-51ylkiyv53]  .nav-link {
-        color: #d7d7d7;
-        background: none;
-        border: none;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-        width: 100%;
-    }
+.nav-item[b-51ylkiyv53]  .nav-link {
+    color: #d7d7d7;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    width: 100%;
+}
 
 .nav-item[b-51ylkiyv53]  a.active {
     background-color: rgba(255,255,255,0.37);
@@ -195,10 +195,7 @@ main[b-nhq86g19sr] {
     }
 
     .nav-scrollable[b-51ylkiyv53] {
-        /* Never collapse the sidebar for wide screens */
         display: block;
-
-        /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }

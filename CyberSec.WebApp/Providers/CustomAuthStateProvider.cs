@@ -1,52 +1,56 @@
 ﻿using System.Security.Claims;
 using CyberSec.bal.Services.Interfaces;
+using CyberSec.dal.Entities;
 using CyberSec.dal.Models;
 using Microsoft.AspNetCore.Components.Authorization;
-using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
 namespace CyberSec.WebApp.Providers;
 
 public class CustomAuthStateProvider : AuthenticationStateProvider
 {
     private readonly IAuthService _authService;
-    private readonly ProtectedSessionStorage _sessionStorage;
     private ClaimsPrincipal _anonymous => new ClaimsPrincipal(new ClaimsIdentity());
+    
+    private LoginModel? _currentUser = null;
 
-    public CustomAuthStateProvider(IAuthService authService, ProtectedSessionStorage sessionStorage)
+    public CustomAuthStateProvider(IAuthService authService)
     {
         _authService = authService;
-        _sessionStorage = sessionStorage;
     }
 
-    public override async Task<AuthenticationState> GetAuthenticationStateAsync()
+    public override Task<AuthenticationState> GetAuthenticationStateAsync()
     {
-        try
+        Console.WriteLine("🔵 Wywołano `GetAuthenticationStateAsync()`");
+
+        if (_currentUser != null)
         {
-            var userResult = await _sessionStorage.GetAsync<LoginModel>("user");
-            if (userResult.Success && userResult.Value is not null)
+            Console.WriteLine($"✅ Sesja odnaleziona: {_currentUser.Username}");
+
+            var identity = new ClaimsIdentity(new[]
             {
-                var identity = new ClaimsIdentity(new[]
-                {
-                    new Claim(ClaimTypes.Name, userResult.Value.Username)
-                }, "CustomAuth");
+                new Claim(ClaimTypes.Name, _currentUser.Username)
+            }, "CustomAuth");
 
-                return new AuthenticationState(new ClaimsPrincipal(identity));
-            }
-        }
-        catch
-        {
-            return new AuthenticationState(_anonymous);
+            return Task.FromResult(new AuthenticationState(new ClaimsPrincipal(identity)));
         }
 
-        return new AuthenticationState(_anonymous);
+        Console.WriteLine("⚠️ Brak aktywnej sesji.");
+        return Task.FromResult(new AuthenticationState(_anonymous));
     }
 
     public async Task<bool> LoginAsync(string username, string password)
     {
-        if (await _authService.ValidateUserAsync(username, password))
+        Console.WriteLine($"🔵 Próba logowania: {username}");
+
+        var isValid = await _authService.ValidateUserAsync(username, password);
+        Console.WriteLine($"🔍 Walidacja użytkownika {username}: {isValid}");
+
+        if (isValid)
         {
-            var userModel = new LoginModel { Username = username, Password = password };
-            await _sessionStorage.SetAsync("user", userModel);
+            Console.WriteLine($"✅ Logowanie udane: {username}");
+
+            _currentUser = new LoginModel { Username = username, Password = password };
+            Console.WriteLine("🔵 Sesja została zapisana.");
 
             var identity = new ClaimsIdentity(new[]
             {
@@ -55,14 +59,30 @@ public class CustomAuthStateProvider : AuthenticationStateProvider
 
             var principal = new ClaimsPrincipal(identity);
             NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(principal)));
+
             return true;
         }
+
+        Console.WriteLine($"❌ Błędne dane logowania dla: {username}");
         return false;
     }
 
-    public async Task LogoutAsync()
+    public Task LogoutAsync()
     {
-        await _sessionStorage.DeleteAsync("user");
+        Console.WriteLine("🔵 Wylogowanie użytkownika.");
+        _currentUser = null;
         NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(_anonymous)));
+        return Task.CompletedTask;
+    }
+
+    public async Task<User?> GetCurrentUserAsync()
+    {
+        var authState = await GetAuthenticationStateAsync();
+        var username = authState.User.Identity?.Name;
+        
+        if (string.IsNullOrEmpty(username))
+            return null;
+            
+        return await _authService.GetUserByUsernameAsync(username);
     }
 }

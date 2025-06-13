@@ -1,0 +1,36 @@
+﻿@page "/register"
+@rendermode InteractiveServer
+@using CyberSec.dal.Models
+@using CyberSec.bal.Services.Interfaces
+@inject IAuthService authService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Rejestracja</PageTitle>
+
+<div class="auth-container">
+    <div class="auth-box">
+        <h3>Zarejestruj się</h3>
+
+        @if (message != null)
+        {
+            <div class="alert alert-info alert-message">@message</div>
+        }
+
+        <EditForm Model="@registerModel" OnValidSubmit="RegisterUser" formname="registerForm">
+            <InputText placeholder="Login" @bind-Value="registerModel.Username" class="auth-input"/>
+            <InputText type="password" placeholder="Hasło" @bind-Value="registerModel.Password" class="auth-input"/>
+            <button type="submit" class="auth-button">Zarejestruj</button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private LoginModel registerModel = new();
+    private string? message;
+
+    private async Task RegisterUser()
+    {
+        bool success = await authService.RegisterUserAsync(registerModel.Username, registerModel.Password);
+        message = success ? "✅ Rejestracja udana! Możesz się teraz zalogować." : "❌ Użytkownik już istnieje!";
+    }
+}

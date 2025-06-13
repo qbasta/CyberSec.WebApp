@@ -10,6 +10,7 @@ C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.bal\obj\Debug\net8.0\CyberSec.ba
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.bal\obj\Debug\net8.0\CyberSec.bal.AssemblyInfoInputs.cache
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.bal\obj\Debug\net8.0\CyberSec.bal.AssemblyInfo.cs
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.bal\obj\Debug\net8.0\CyberSec.bal.csproj.CoreCompileInputs.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.bal\obj\Debug\net8.0\CyberSec.bal.sourcelink.json
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.bal\obj\Debug\net8.0\CyberSec.31C481D8.Up2Date
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.bal\obj\Debug\net8.0\CyberSec.bal.dll
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.bal\obj\Debug\net8.0\refint\CyberSec.bal.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RJY8RkHbAOUyJL/Q5vUEF5bJ93APKnmKbr3mrXxj8Jg=",
+  "Hash": "fFy93YgBd3TcQQXufHK6Nj9idq3HcZNRbU9aW33Zm9k=",
   "Source": "CyberSec.WebApp",
   "BasePath": "_content/CyberSec.WebApp",
   "Mode": "Default",
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-7nj1eyv6kz.gz",
+      "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-1yon7n7x9m.gz",
       "SourceId": "CyberSec.WebApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/CyberSec.WebApp",
-      "RelativePath": "CyberSec.WebApp#[.{fingerprint=7nj1eyv6kz}]!.bundle.scp.css.gz",
+      "RelativePath": "CyberSec.WebApp#[.{fingerprint=1yon7n7x9m}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\CyberSec.WebApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rlb94497zi",
-      "Integrity": "/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=",
+      "Fingerprint": "23w216fiv0",
+      "Integrity": "EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\CyberSec.WebApp.bundle.scp.css"
@@ -248,12 +248,12 @@
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-7nj1eyv6kz.gz",
+      "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-1yon7n7x9m.gz",
       "SourceId": "CyberSec.WebApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/CyberSec.WebApp",
-      "RelativePath": "CyberSec.WebApp#[.{fingerprint=7nj1eyv6kz}]?.styles.css.gz",
+      "RelativePath": "CyberSec.WebApp#[.{fingerprint=1yon7n7x9m}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -262,8 +262,8 @@
       "RelatedAsset": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\CyberSec.WebApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rlb94497zi",
-      "Integrity": "/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=",
+      "Fingerprint": "23w216fiv0",
+      "Integrity": "EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\CyberSec.WebApp.styles.css"
@@ -288,6 +288,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\98uk83racv-dpvtllstt0.gz",
+      "SourceId": "CyberSec.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CyberSec.WebApp",
+      "RelativePath": "css/site#[.{fingerprint=dpvtllstt0}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\css\\site.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "xvg6oqlu9o",
+      "Integrity": "/SpxRHQeEQVzkn5MBVj5DHWL9mG+20Zp90f2jtKHjE8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\css\\site.css"
     },
     {
       "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\9ckpez6q3b-4094rpi4f9.gz",
@@ -500,12 +521,12 @@
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-khy4lop6wu.gz",
+      "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-xs9hwazm01.gz",
       "SourceId": "CyberSec.WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/CyberSec.WebApp",
-      "RelativePath": "app#[.{fingerprint=khy4lop6wu}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=xs9hwazm01}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -514,8 +535,8 @@
       "RelatedAsset": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "596e5mu3rg",
-      "Integrity": "KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=",
+      "Fingerprint": "v5irq3zgq3",
+      "Integrity": "TfUYoKx3xejivU0IQr8yGKhbUr2FkZdxY3/lL2mRD3w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\app.css"
@@ -1018,8 +1039,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "7nj1eyv6kz",
-      "Integrity": "sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=",
+      "Fingerprint": "1yon7n7x9m",
+      "Integrity": "90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\CyberSec.WebApp.styles.css"
@@ -1039,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "7nj1eyv6kz",
-      "Integrity": "sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=",
+      "Fingerprint": "1yon7n7x9m",
+      "Integrity": "90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\CyberSec.WebApp.bundle.scp.css"
@@ -1060,11 +1081,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "khy4lop6wu",
-      "Integrity": "aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=",
+      "Fingerprint": "xs9hwazm01",
+      "Integrity": "H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\css\\site.css",
+      "SourceId": "CyberSec.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\",
+      "BasePath": "_content/CyberSec.WebApp",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dpvtllstt0",
+      "Integrity": "we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
       "Identity": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\favicon.png",
@@ -2015,12 +2057,12 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-khy4lop6wu.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-xs9hwazm01.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000636132316"
+          "Quality": "0.000431220354"
         }
       ],
       "ResponseHeaders": [
@@ -2030,15 +2072,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1571"
+          "Value": "2318"
         },
         {
           "Name": "ETag",
-          "Value": "\"KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=\""
+          "Value": "\"TfUYoKx3xejivU0IQr8yGKhbUr2FkZdxY3/lL2mRD3w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 12:57:05 GMT"
+          "Value": "Wed, 19 Mar 2025 21:25:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2058,13 +2100,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "W/\"H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg="
         }
       ]
     },
@@ -2079,7 +2121,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2900"
+          "Value": "5893"
         },
         {
           "Name": "Content-Type",
@@ -2087,11 +2129,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "\"H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 12:57:05 GMT"
+          "Value": "Wed, 19 Mar 2025 21:25:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2101,13 +2143,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg="
         }
       ]
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-khy4lop6wu.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-xs9hwazm01.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2116,7 +2158,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1571"
+          "Value": "2318"
         },
         {
           "Name": "Content-Type",
@@ -2124,11 +2166,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=\""
+          "Value": "\"TfUYoKx3xejivU0IQr8yGKhbUr2FkZdxY3/lL2mRD3w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 12:57:05 GMT"
+          "Value": "Wed, 19 Mar 2025 21:25:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2146,18 +2188,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0="
+          "Value": "sha256-TfUYoKx3xejivU0IQr8yGKhbUr2FkZdxY3/lL2mRD3w="
         }
       ]
     },
     {
-      "Route": "app.khy4lop6wu.css",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-khy4lop6wu.gz",
+      "Route": "app.xs9hwazm01.css",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-xs9hwazm01.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000636132316"
+          "Quality": "0.000431220354"
         }
       ],
       "ResponseHeaders": [
@@ -2167,15 +2209,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1571"
+          "Value": "2318"
         },
         {
           "Name": "ETag",
-          "Value": "\"KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=\""
+          "Value": "\"TfUYoKx3xejivU0IQr8yGKhbUr2FkZdxY3/lL2mRD3w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 12:57:05 GMT"
+          "Value": "Wed, 19 Mar 2025 21:25:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2195,13 +2237,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "W/\"H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "khy4lop6wu"
+          "Value": "xs9hwazm01"
         },
         {
           "Name": "label",
@@ -2209,12 +2251,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg="
         }
       ]
     },
     {
-      "Route": "app.khy4lop6wu.css",
+      "Route": "app.xs9hwazm01.css",
       "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2224,7 +2266,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2900"
+          "Value": "5893"
         },
         {
           "Name": "Content-Type",
@@ -2232,11 +2274,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "\"H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 12:57:05 GMT"
+          "Value": "Wed, 19 Mar 2025 21:25:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2246,7 +2288,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "khy4lop6wu"
+          "Value": "xs9hwazm01"
         },
         {
           "Name": "label",
@@ -2254,13 +2296,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-H3xot2FuiBqu+pYPb5cM6BMLFxchC9JK+TyTstPQ5Yg="
         }
       ]
     },
     {
-      "Route": "app.khy4lop6wu.css.gz",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-khy4lop6wu.gz",
+      "Route": "app.xs9hwazm01.css.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\g3ibh2burx-xs9hwazm01.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2269,7 +2311,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1571"
+          "Value": "2318"
         },
         {
           "Name": "Content-Type",
@@ -2277,11 +2319,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=\""
+          "Value": "\"TfUYoKx3xejivU0IQr8yGKhbUr2FkZdxY3/lL2mRD3w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 12:57:05 GMT"
+          "Value": "Wed, 19 Mar 2025 21:25:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2299,7 +2341,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "khy4lop6wu"
+          "Value": "xs9hwazm01"
         },
         {
           "Name": "label",
@@ -2307,18 +2349,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0="
+          "Value": "sha256-TfUYoKx3xejivU0IQr8yGKhbUr2FkZdxY3/lL2mRD3w="
         }
       ]
     },
     {
-      "Route": "CyberSec.WebApp.7nj1eyv6kz.bundle.scp.css",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-7nj1eyv6kz.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\98uk83racv-dpvtllstt0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000559910414"
+          "Quality": "0.000370507595"
         }
       ],
       "ResponseHeaders": [
@@ -2328,15 +2370,152 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1785"
+          "Value": "2698"
         },
         {
           "Name": "ETag",
-          "Value": "\"/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=\""
+          "Value": "\"/SpxRHQeEQVzkn5MBVj5DHWL9mG+20Zp90f2jtKHjE8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 22:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 22:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\98uk83racv-dpvtllstt0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2698"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/SpxRHQeEQVzkn5MBVj5DHWL9mG+20Zp90f2jtKHjE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 22:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/SpxRHQeEQVzkn5MBVj5DHWL9mG+20Zp90f2jtKHjE8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.dpvtllstt0.css",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\98uk83racv-dpvtllstt0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000370507595"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2698"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/SpxRHQeEQVzkn5MBVj5DHWL9mG+20Zp90f2jtKHjE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 22:03:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2356,13 +2535,174 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=\""
+          "Value": "W/\"we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7nj1eyv6kz"
+          "Value": "dpvtllstt0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.dpvtllstt0.css",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 22:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dpvtllstt0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-we5OsqJfNgs24qk6iwkbYsfEyX0Xo6DSDMlfrSe+uyo="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.dpvtllstt0.css.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\98uk83racv-dpvtllstt0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2698"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/SpxRHQeEQVzkn5MBVj5DHWL9mG+20Zp90f2jtKHjE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 22:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dpvtllstt0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/SpxRHQeEQVzkn5MBVj5DHWL9mG+20Zp90f2jtKHjE8="
+        }
+      ]
+    },
+    {
+      "Route": "CyberSec.WebApp.1yon7n7x9m.bundle.scp.css",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-1yon7n7x9m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000584795322"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1709"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1yon7n7x9m"
         },
         {
           "Name": "label",
@@ -2370,12 +2710,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8="
+          "Value": "sha256-90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk="
         }
       ]
     },
     {
-      "Route": "CyberSec.WebApp.7nj1eyv6kz.bundle.scp.css",
+      "Route": "CyberSec.WebApp.1yon7n7x9m.bundle.scp.css",
       "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\CyberSec.WebApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2385,7 +2725,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5977"
+          "Value": "5722"
         },
         {
           "Name": "Content-Type",
@@ -2393,11 +2733,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=\""
+          "Value": "\"90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2407,7 +2747,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7nj1eyv6kz"
+          "Value": "1yon7n7x9m"
         },
         {
           "Name": "label",
@@ -2415,13 +2755,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8="
+          "Value": "sha256-90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk="
         }
       ]
     },
     {
-      "Route": "CyberSec.WebApp.7nj1eyv6kz.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-7nj1eyv6kz.gz",
+      "Route": "CyberSec.WebApp.1yon7n7x9m.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-1yon7n7x9m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2430,7 +2770,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1785"
+          "Value": "1709"
         },
         {
           "Name": "Content-Type",
@@ -2438,11 +2778,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=\""
+          "Value": "\"EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2460,7 +2800,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7nj1eyv6kz"
+          "Value": "1yon7n7x9m"
         },
         {
           "Name": "label",
@@ -2468,18 +2808,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo="
+          "Value": "sha256-EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs="
         }
       ]
     },
     {
-      "Route": "CyberSec.WebApp.7nj1eyv6kz.styles.css",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-7nj1eyv6kz.gz",
+      "Route": "CyberSec.WebApp.1yon7n7x9m.styles.css",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-1yon7n7x9m.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000559910414"
+          "Quality": "0.000584795322"
         }
       ],
       "ResponseHeaders": [
@@ -2489,15 +2829,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1785"
+          "Value": "1709"
         },
         {
           "Name": "ETag",
-          "Value": "\"/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=\""
+          "Value": "\"EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2517,13 +2857,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=\""
+          "Value": "W/\"90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7nj1eyv6kz"
+          "Value": "1yon7n7x9m"
         },
         {
           "Name": "label",
@@ -2531,12 +2871,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8="
+          "Value": "sha256-90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk="
         }
       ]
     },
     {
-      "Route": "CyberSec.WebApp.7nj1eyv6kz.styles.css",
+      "Route": "CyberSec.WebApp.1yon7n7x9m.styles.css",
       "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\CyberSec.WebApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2546,7 +2886,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5977"
+          "Value": "5722"
         },
         {
           "Name": "Content-Type",
@@ -2554,11 +2894,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=\""
+          "Value": "\"90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2568,7 +2908,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7nj1eyv6kz"
+          "Value": "1yon7n7x9m"
         },
         {
           "Name": "label",
@@ -2576,13 +2916,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8="
+          "Value": "sha256-90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk="
         }
       ]
     },
     {
-      "Route": "CyberSec.WebApp.7nj1eyv6kz.styles.css.gz",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-7nj1eyv6kz.gz",
+      "Route": "CyberSec.WebApp.1yon7n7x9m.styles.css.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-1yon7n7x9m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2591,7 +2931,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1785"
+          "Value": "1709"
         },
         {
           "Name": "Content-Type",
@@ -2599,11 +2939,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=\""
+          "Value": "\"EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2621,7 +2961,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7nj1eyv6kz"
+          "Value": "1yon7n7x9m"
         },
         {
           "Name": "label",
@@ -2629,18 +2969,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo="
+          "Value": "sha256-EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs="
         }
       ]
     },
     {
       "Route": "CyberSec.WebApp.bundle.scp.css",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-7nj1eyv6kz.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-1yon7n7x9m.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000559910414"
+          "Quality": "0.000584795322"
         }
       ],
       "ResponseHeaders": [
@@ -2650,15 +2990,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1785"
+          "Value": "1709"
         },
         {
           "Name": "ETag",
-          "Value": "\"/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=\""
+          "Value": "\"EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2678,13 +3018,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=\""
+          "Value": "W/\"90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8="
+          "Value": "sha256-90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk="
         }
       ]
     },
@@ -2699,7 +3039,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5977"
+          "Value": "5722"
         },
         {
           "Name": "Content-Type",
@@ -2707,11 +3047,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=\""
+          "Value": "\"90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2721,13 +3061,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8="
+          "Value": "sha256-90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk="
         }
       ]
     },
     {
       "Route": "CyberSec.WebApp.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-7nj1eyv6kz.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\5lbgagat04-1yon7n7x9m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2736,7 +3076,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1785"
+          "Value": "1709"
         },
         {
           "Name": "Content-Type",
@@ -2744,11 +3084,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=\""
+          "Value": "\"EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2766,18 +3106,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo="
+          "Value": "sha256-EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs="
         }
       ]
     },
     {
       "Route": "CyberSec.WebApp.styles.css",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-7nj1eyv6kz.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-1yon7n7x9m.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000559910414"
+          "Quality": "0.000584795322"
         }
       ],
       "ResponseHeaders": [
@@ -2787,15 +3127,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1785"
+          "Value": "1709"
         },
         {
           "Name": "ETag",
-          "Value": "\"/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=\""
+          "Value": "\"EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2815,13 +3155,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=\""
+          "Value": "W/\"90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8="
+          "Value": "sha256-90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk="
         }
       ]
     },
@@ -2836,7 +3176,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5977"
+          "Value": "5722"
         },
         {
           "Name": "Content-Type",
@@ -2844,11 +3184,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8=\""
+          "Value": "\"90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2858,13 +3198,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sx+aWKAvy4ceVkQ/pXDNkSGkMphuhcQzV12jutb84c8="
+          "Value": "sha256-90626up4okzXtluP0+zlJ4WocWNWGSYMqImLrOp0Jkk="
         }
       ]
     },
     {
       "Route": "CyberSec.WebApp.styles.css.gz",
-      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-7nj1eyv6kz.gz",
+      "AssetFile": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\compressed\\8cgudux5ri-1yon7n7x9m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2873,7 +3213,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1785"
+          "Value": "1709"
         },
         {
           "Name": "Content-Type",
@@ -2881,11 +3221,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo=\""
+          "Value": "\"EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 13:39:27 GMT"
+          "Value": "Thu, 12 Jun 2025 21:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2903,7 +3243,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/wb+3EQZ5pkTAPTsbNz8NExyBWHpCDWtnxzbVFmLPjo="
+          "Value": "sha256-EghzM0cY67bh9qiXabJzcqo1wnw6uKwmgC30BC/FuOs="
         }
       ]
     },

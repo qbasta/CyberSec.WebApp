@@ -9,6 +9,7 @@ C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.da
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.AssemblyInfoInputs.cache
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.AssemblyInfo.cs
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.csproj.CoreCompileInputs.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.sourcelink.json
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.076E81D8.Up2Date
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\CyberSec.dal.dll
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dal\obj\Debug\net8.0\refint\CyberSec.dal.dll

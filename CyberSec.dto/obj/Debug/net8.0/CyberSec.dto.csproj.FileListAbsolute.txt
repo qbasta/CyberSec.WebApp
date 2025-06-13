@@ -5,6 +5,7 @@ C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dt
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.AssemblyInfoInputs.cache
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.AssemblyInfo.cs
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.csproj.CoreCompileInputs.cache
+C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.sourcelink.json
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.dll
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\refint\CyberSec.dto.dll
 C:\Users\jakuf\Desktop\CyberSec.WebApp\CyberSec.dto\obj\Debug\net8.0\CyberSec.dto.pdb

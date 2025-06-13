@@ -1,0 +1,267 @@
+﻿@page "/permissions"
+@rendermode InteractiveServer
+@using CyberSec.dal.Entities
+@using CyberSec.bal.Services.Interfaces
+@using CyberSec.WebApp.Providers
+@inject IMessagesService MessagesService
+@inject IUserService UserService
+@inject CustomAuthStateProvider AuthStateProvider
+
+@code {
+    private List<Message> userMessages = new();
+    private List<User> allUsers = new();
+    private User? currentUser = null;
+    private bool isAuthenticated = false;
+    private bool isLoading = true;
+    private Dictionary<string, bool> expandedMessages = new();
+    private Dictionary<string, string?> confirmPermission = new();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadAuthState();
+            if (isAuthenticated)
+            {
+                await LoadUserMessages();
+                await LoadUsers();
+            }
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task LoadAuthState()
+    {
+        try
+        {
+            currentUser = await AuthStateProvider.GetCurrentUserAsync();
+            isAuthenticated = currentUser != null;
+            Console.WriteLine($"🔍 Permissions - Stan autoryzacji: {isAuthenticated}, Użytkownik: {currentUser?.Username}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Permissions - Błąd LoadAuthState: {ex.Message}");
+            isAuthenticated = false;
+        }
+    }
+
+    private async Task LoadUserMessages()
+    {
+        if (currentUser == null) return;
+
+        try
+        {
+            userMessages = await MessagesService.GetMessagesForUserAsync(currentUser.Id);
+            Console.WriteLine($"📊 Permissions - Załadowano {userMessages.Count} wiadomości użytkownika");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Permissions - Błąd LoadUserMessages: {ex.Message}");
+            userMessages = new List<Message>();
+        }
+    }
+
+    private async Task LoadUsers()
+    {
+        try
+        {
+            allUsers = await UserService.GetAllUsersAsync();
+            Console.WriteLine($"👥 Permissions - Załadowano {allUsers.Count} użytkowników");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Permissions - Błąd LoadUsers: {ex.Message}");
+            allUsers = new List<User>();
+        }
+    }
+
+    private void ToggleExpand(string messageId)
+    {
+        if (expandedMessages.ContainsKey(messageId))
+            expandedMessages[messageId] = !expandedMessages[messageId];
+        else
+            expandedMessages[messageId] = true;
+    }
+
+    private async Task ConfirmOrTogglePermission(string messageId, string targetUserId)
+    {
+        if (confirmPermission.TryGetValue(messageId, out string? pendingUser) && pendingUser == targetUserId)
+        {
+            try
+            {
+                await MessagesService.TogglePermissionAsync(messageId, targetUserId);
+                confirmPermission.Remove(messageId);
+                await LoadUserMessages();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Permissions - Błąd TogglePermission: {ex.Message}");
+            }
+        }
+        else
+        {
+            confirmPermission[messageId] = targetUserId;
+            InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private bool HasEditPermission(Message msg, string userId)
+    {
+        return msg.Permissions.Any(p => p.UserId == userId && p.CanModify);
+    }
+}
+
+@if (isLoading)
+{
+    <div class="permissions-container">
+        <div class="permissions-box">
+            <p>⏳ Ładowanie...</p>
+        </div>
+    </div>
+}
+else if (!isAuthenticated)
+{
+    <div class="permissions-container">
+        <div class="permissions-box">
+            <p class="not-logged-in">🔒 Musisz się zalogować, aby zarządzać uprawnieniami.</p>
+            <a href="/login" class="auth-button">Przejdź do logowania</a>
+        </div>
+    </div>
+}
+else
+{
+    <div class="permissions-container">
+        <div class="permissions-box">
+            <h2>Zarządzaj uprawnieniami do swoich wiadomości</h2>
+            <p>Zalogowany jako: <strong>@currentUser?.Username</strong></p>
+
+            @if (userMessages.Count == 0)
+            {
+                <p class="no-messages">Nie masz żadnych wiadomości.</p>
+                <a href="/messages" class="auth-button">Dodaj pierwszą wiadomość</a>
+            }
+            else
+            {
+                <div class="message-list">
+                    @foreach (var msg in userMessages)
+                    {
+                        <div class="message-item">
+                            <p class="message-header">📩 <strong>@msg.Content</strong></p>
+                            <small>@msg.CreatedDateTime.ToString("dd.MM.yyyy")</small>
+
+                            <button class="btn btn-info mt-2 expand-button" @onclick="() => ToggleExpand(msg.Id)">
+                                @(expandedMessages.ContainsKey(msg.Id) && expandedMessages[msg.Id] ? "🔼 Ukryj ustawienia" : "🔽 Ustawienia uprawnień")
+                            </button>
+
+                            @if (expandedMessages.ContainsKey(msg.Id) && expandedMessages[msg.Id])
+                            {
+                                <div class="user-list">
+                                    <h4>Użytkownicy:</h4>
+                                    @foreach (var user in allUsers)
+                                    {
+                                        @if (user.Id != currentUser?.Id)
+                                        {
+                                            <div class="user-item">
+                                                <span>👤 @user.Username</span>
+                                                <button class="btn btn-sm permission-button"
+                                                        style="background-color: @(HasEditPermission(msg, user.Id) ? "red" : "green"); color: white;"
+                                                        @onclick="() => ConfirmOrTogglePermission(msg.Id, user.Id)">
+                                                    @((confirmPermission.ContainsKey(msg.Id) && confirmPermission[msg.Id] == user.Id) 
+                                                        ? "⚠ Potwierdź" 
+                                                        : (HasEditPermission(msg, user.Id) ? "🚫 Odbierz uprawnienia" : "✅ Nadaj uprawnienia"))
+                                                </button>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+
+<style>
+    .permissions-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .permissions-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    .message-list {
+        margin-top: 20px;
+    }
+
+    .message-item {
+        background: #f0f0f0;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 1px solid #bbb;
+        text-align: left;
+    }
+
+    .expand-button {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .user-list {
+        background: #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .user-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .permission-button {
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .permission-button:hover {
+        filter: brightness(85%);
+    }
+
+    .no-messages {
+        font-weight: bold;
+        color: red;
+    }
+
+    .auth-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #1b6ec2;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .auth-button:hover {
+        background-color: #1861ac;
+    }
+</style>

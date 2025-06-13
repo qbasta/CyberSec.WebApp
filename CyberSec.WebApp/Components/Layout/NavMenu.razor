@@ -1,17 +1,65 @@
-﻿<div class="nav-scrollable">
-    <nav class="nav flex-column">
+﻿@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Components.Authorization
+@using CyberSec.WebApp.Providers
+@inject CustomAuthStateProvider AuthStateProvider
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthProvider
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="">Home</NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">Counter</NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">Weather</NavLink>
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
         </div>
 
+        <!-- ✅ WIADOMOŚCI - ZAWSZE WIDOCZNE (dla wszystkich użytkowników) -->
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="login">Zaloguj się</NavLink>
+            <NavLink class="nav-link" href="messages">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Wiadomości
+            </NavLink>
         </div>
+
+        <AuthorizeView>
+            <Authorized>
+                <!-- ✅ TYLKO DLA ZALOGOWANYCH -->
+                <div class="nav-item px-3">
+                    <div class="nav-user-info">
+                        <p>👤 Witaj, @context.User.Identity?.Name!</p>
+                        <button class="logout-btn" @onclick="Logout">🚪 Wyloguj</button>
+                    </div>
+                </div>
+                
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="permissions">
+                        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Uprawnienia
+                    </NavLink>
+                </div>
+            </Authorized>
+            <NotAuthorized>
+                <!-- ✅ TYLKO DLA NIEZALOGOWANYCH -->
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="login">
+                        <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Zaloguj się
+                    </NavLink>
+                </div>
+                
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="register">
+                        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Rejestracja
+                    </NavLink>
+                </div>
+            </NotAuthorized>
+        </AuthorizeView>
     </nav>
 </div>
+
+@code {
+    private async Task Logout()
+    {
+        await AuthStateProvider.LogoutAsync();
+        NavigationManager.NavigateTo("/", forceLoad: true);
+    }
+}

@@ -1,0 +1,253 @@
+﻿@page "/messages"
+@rendermode InteractiveServer
+@using CyberSec.dal.Entities
+@using CyberSec.bal.Services.Interfaces
+@using CyberSec.WebApp.Providers
+@inject IMessagesService MessagesService
+@inject CustomAuthStateProvider AuthStateProvider
+
+@code {
+    private List<Message> messages = new();
+    private string newMessageContent = string.Empty;
+    private User? currentUser = null;
+    private bool isAuthenticated = false;
+    private Dictionary<string, bool> confirmDelete = new();
+    private Dictionary<string, bool> editMode = new();
+    private Dictionary<string, string> editedMessageContent = new();
+    private bool isLoading = true;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadAuthState();
+            await LoadMessages(); // ✅ Zawsze ładuj wiadomości, niezależnie od stanu logowania
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task LoadAuthState()
+    {
+        try
+        {
+            currentUser = await AuthStateProvider.GetCurrentUserAsync();
+            isAuthenticated = currentUser != null;
+            Console.WriteLine($"🔍 Stan autoryzacji: {isAuthenticated}, Użytkownik: {currentUser?.Username}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Błąd LoadAuthState: {ex.Message}");
+            isAuthenticated = false;
+        }
+    }
+
+    private async Task LoadMessages()
+    {
+        try
+        {
+            // ✅ Zawsze ładuj WSZYSTKIE wiadomości (niezależnie od logowania)
+            messages = await MessagesService.GetAllMessagesAsync();
+
+            // Inicjalizujemy stan wiadomości
+            foreach (var msg in messages)
+            {
+                editMode[msg.Id] = false;
+                editedMessageContent[msg.Id] = msg.Content;
+            }
+
+            Console.WriteLine($"📊 Załadowano {messages.Count} wiadomości");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Błąd LoadMessages: {ex.Message}");
+            messages = new List<Message>();
+        }
+    }
+
+    private async Task AddMessage()
+    {
+        if (!isAuthenticated || currentUser == null || string.IsNullOrWhiteSpace(newMessageContent))
+        {
+            return;
+        }
+
+        try
+        {
+            var newMessage = new Message
+            {
+                Content = newMessageContent,
+                UserId = currentUser.Id
+            };
+
+            await MessagesService.AddMessageAsync(newMessage);
+            newMessageContent = string.Empty;
+            await LoadMessages();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Błąd AddMessage: {ex.Message}");
+        }
+    }
+
+    private async Task SaveEditedMessage(string messageId)
+    {
+        if (!editedMessageContent.ContainsKey(messageId) || string.IsNullOrWhiteSpace(editedMessageContent[messageId]))
+        {
+            return;
+        }
+
+        try
+        {
+            await MessagesService.UpdateMessageAsync(messageId, editedMessageContent[messageId]);
+            editMode[messageId] = false;
+            await LoadMessages();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Błąd SaveEditedMessage: {ex.Message}");
+        }
+    }
+
+    private async Task ConfirmOrDeleteMessage(string messageId)
+    {
+        if (currentUser == null || !await MessagesService.CanUserDeleteMessageAsync(currentUser.Id, messageId))
+        {
+            return;
+        }
+
+        if (confirmDelete.ContainsKey(messageId) && confirmDelete[messageId])
+        {
+            try
+            {
+                await MessagesService.DeleteMessageAsync(messageId);
+                confirmDelete.Remove(messageId);
+                await LoadMessages();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Błąd ConfirmOrDeleteMessage: {ex.Message}");
+            }
+        }
+        else
+        {
+            confirmDelete[messageId] = true;
+            InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private bool CanEditMessage(string messageId)
+    {
+        if (currentUser == null) return false;
+        
+        var message = messages.FirstOrDefault(m => m.Id == messageId);
+        if (message == null) return false;
+        
+        return message.UserId == currentUser.Id || 
+               message.Permissions.Any(p => p.UserId == currentUser.Id && p.CanModify);
+    }
+
+    private bool CanDeleteMessage(string messageId)
+    {
+        if (currentUser == null) return false;
+        
+        var message = messages.FirstOrDefault(m => m.Id == messageId);
+        if (message == null) return false;
+        
+        return message.UserId == currentUser.Id;
+    }
+
+    private void ToggleEditMode(string messageId)
+    {
+        if (editMode.ContainsKey(messageId))
+        {
+            editMode[messageId] = !editMode[messageId];
+        }
+    }
+}
+
+@if (isLoading)
+{
+    <div class="messages-container">
+        <div class="messages-box">
+            <p>⏳ Ładowanie...</p>
+        </div>
+    </div>
+}
+else
+{
+    <div class="messages-container">
+        <div class="messages-box">
+            @if (isAuthenticated)
+            {
+                <h2>Witaj, @currentUser?.Username!</h2>
+
+                <!-- Formularz dodawania wiadomości - TYLKO dla zalogowanych -->
+                <div class="add-message-form">
+                    <h3>Dodaj nową wiadomość</h3>
+                    <textarea class="message-input" placeholder="Wpisz swoją wiadomość..." @bind="newMessageContent"></textarea>
+                    <button class="send-button" @onclick="AddMessage" disabled="@string.IsNullOrWhiteSpace(newMessageContent)">
+                        📤 Wyślij wiadomość
+                    </button>
+                </div>
+
+                <h3>Wszystkie wiadomości:</h3>
+            }
+            else
+            {
+                <!-- ✅ Niezalogowany użytkownik widzi wiadomości, ale nie może dodawać -->
+                <h2>Wiadomości</h2>
+                <p class="text-info">🔒 <a href="/login">Zaloguj się</a>, aby dodawać wiadomości.</p>
+                <h3>Wszystkie wiadomości:</h3>
+            }
+
+            @if (messages.Count == 0)
+            {
+                <p class="no-messages">Brak wiadomości do wyświetlenia.</p>
+            }
+            else
+            {
+                <div class="message-list">
+                    @foreach (var msg in messages)
+                    {
+                        <div class="message-item">
+                            <p class="message-header">👤 <strong>@(msg.User?.Username ?? "Nieznany użytkownik")</strong></p>
+
+                            @if (editMode.ContainsKey(msg.Id) && editMode[msg.Id] && isAuthenticated)
+                            {
+                                <!-- TRYB EDYCJI - tylko dla zalogowanych z uprawnieniami -->
+                                <textarea class="form-control edit-message-input" @bind="editedMessageContent[msg.Id]"></textarea>
+
+                                <div class="button-container">
+                                    <button class="btn btn-success save-button" @onclick="() => SaveEditedMessage(msg.Id)">💾 Zapisz</button>
+                                    <button class="btn btn-secondary" @onclick="() => ToggleEditMode(msg.Id)">❌ Anuluj</button>
+                                    <small class="message-date">@msg.CreatedDateTime.ToString("dd.MM.yyyy")</small>
+                                </div>
+                            }
+                            else
+                            {
+                                <!-- NORMALNY WIDOK - wszyscy widzą, ale tylko zalogowani mogą edytować/usuwać -->
+                                <p class="message-content">@msg.Content</p>
+                                <div class="button-container">
+                                    @if (isAuthenticated && CanEditMessage(msg.Id))
+                                    {
+                                        <button class="btn btn-warning edit-button" @onclick="() => ToggleEditMode(msg.Id)">✏ Edytuj</button>
+                                    }
+                                    
+                                    @if (isAuthenticated && CanDeleteMessage(msg.Id))
+                                    {
+                                        <button class="delete-button" @onclick="() => ConfirmOrDeleteMessage(msg.Id)">
+                                            @((confirmDelete.ContainsKey(msg.Id) && confirmDelete[msg.Id]) ? "⚠ Potwierdź usunięcie" : "🗑 Usuń")
+                                        </button>
+                                    }
+                                    
+                                    <small class="message-date">@msg.CreatedDateTime.ToString("dd.MM.yyyy")</small>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}

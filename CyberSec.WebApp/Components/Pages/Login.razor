@@ -1,30 +1,95 @@
 ﻿@page "/login"
-@using CyberSec.dal.Models
 @rendermode InteractiveServer
-@inject CyberSec.bal.Services.Interfaces.IAuthService authService
+@using CyberSec.dal.Models
+@using CyberSec.WebApp.Providers
+@inject CustomAuthStateProvider AuthStateProvider
+@inject NavigationManager NavigationManager
 
 <PageTitle>Logowanie</PageTitle>
 
-<h3>Zaloguj się</h3>
+<div class="auth-container">
+    <div class="auth-box">
+        <h3>Zaloguj się</h3>
 
-<EditForm Model="@loginModel" OnValidSubmit="LogIn">
-    <InputText placeholder="Login" @bind-Value="loginModel.Username" class="form-control my-2"/>
-    <InputText type="password" placeholder="Hasło" @bind-Value="loginModel.Password" class="form-control my-2"/>
-    <button type="submit" class="btn btn-primary">Zaloguj</button>
-</EditForm>
+        @if (!string.IsNullOrEmpty(message))
+        {
+            <div class="alert-message">@message</div>
+        }
 
-@if (message != null)
-{
-    <div class="alert alert-info mt-2">@message</div>
-}
+        @if (!isLoggedIn)
+        {
+            <EditForm Model="@loginModel" OnValidSubmit="LogIn" formname="loginForm">
+                <DataAnnotationsValidator />
+                
+                <InputText placeholder="Login" @bind-Value="loginModel.Username" class="auth-input" />
+                <InputText type="password" placeholder="Hasło" @bind-Value="loginModel.Password" class="auth-input" />
+                
+                <button type="submit" class="auth-button" disabled="@isLoggingIn">
+                    @(isLoggingIn ? "Logowanie..." : "Zaloguj")
+                </button>
+            </EditForm>
+        }
+        else
+        {
+            <button class="auth-button" @onclick="GoToMessages">Przejdź do wiadomości</button>
+        }
+    </div>
+</div>
 
 @code {
     private LoginModel loginModel = new();
     private string? message;
+    private bool isLoggedIn = false;
+    private bool isLoggingIn = false;
 
     private async Task LogIn()
     {
-        bool success = await authService.ValidateUserAsync(loginModel.Username, loginModel.Password);
-        message = success ? "Zalogowano poprawnie!" : "Niepoprawny login lub hasło!";
+        isLoggingIn = true;
+        message = null;
+        
+        if (string.IsNullOrWhiteSpace(loginModel.Username))
+        {
+            message = "❌ Login nie może być pusty!";
+            isLoggingIn = false;
+            return;
+        }
+        
+        if (string.IsNullOrWhiteSpace(loginModel.Password))
+        {
+            message = "❌ Hasło nie może być puste!";
+            isLoggingIn = false;
+            return;
+        }
+        
+        try
+        {
+            bool success = await AuthStateProvider.LoginAsync(loginModel.Username, loginModel.Password);
+            
+            if (success)
+            {
+                message = "✅ Zalogowano pomyślnie!";
+                isLoggedIn = true;
+                
+                await Task.Delay(2000);
+                NavigationManager.NavigateTo("/messages");
+            }
+            else
+            {
+                message = "❌ Niepoprawny login lub hasło!";
+            }
+        }
+        catch (Exception ex)
+        {
+            message = $"❌ Błąd logowania: {ex.Message}";
+        }
+        finally
+        {
+            isLoggingIn = false;
+        }
+    }
+
+    private void GoToMessages()
+    {
+        NavigationManager.NavigateTo("/messages");
     }
 }

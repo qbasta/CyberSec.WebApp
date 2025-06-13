@@ -2,11 +2,15 @@
   "Files": [
     {
       "Id": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\CyberSec.WebApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\CyberSec.WebApp.7nj1eyv6kz.bundle.scp.css"
+      "PackagePath": "staticwebassets\\CyberSec.WebApp.1yon7n7x9m.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\jakuf\\Desktop\\CyberSec.WebApp\\CyberSec.WebApp\\wwwroot\\favicon.png",

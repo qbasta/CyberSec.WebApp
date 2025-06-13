@@ -1,22 +1,23 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components.Authorization
-@inject AuthenticationStateProvider authStateProvider
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, @username!</h1>
-
-@code {
-    private string? username = "Guest";
-
-    protected override async Task OnInitializedAsync()
-    {
-        var authState = await authStateProvider.GetAuthenticationStateAsync();
-        var user = authState.User;
-
-        if (user.Identity is not null && user.Identity.IsAuthenticated)
-        {
-            username = user.Identity.Name;
-        }
-    }
-}
+<AuthorizeView>
+    <Authorized Context="authContext">
+        <h1>Hello, @authContext.User.Identity?.Name!</h1>
+        <p>Witaj w systemie zarządzania wiadomościami.</p>
+        <ul>
+            <li><a href="/messages">📩 Przejdź do wiadomości</a></li>
+            <li><a href="/permissions">🔐 Zarządzaj uprawnieniami</a></li>
+        </ul>
+    </Authorized>
+    <NotAuthorized>
+        <h1>Hello, Guest!</h1>
+        <p>Zaloguj się, aby uzyskać dostęp do funkcji systemu.</p>
+        <ul>
+            <li><a href="/login">🔑 Zaloguj się</a></li>
+            <li><a href="/register">📝 Zarejestruj się</a></li>
+        </ul>
+    </NotAuthorized>
+</AuthorizeView>
